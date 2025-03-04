@@ -4,8 +4,8 @@ let translations = {};
 async function loadTranslations() {
   try {
     const [enResponse, esResponse] = await Promise.all([
-      fetch("/assets/locales/en.json"),
-      fetch("/assets/locales/es.json"),
+      fetch("/en.json"),
+      fetch("/es.json"),
     ]);
 
     translations = {
